@@ -62,6 +62,46 @@ header .cta {
     transition: all 0.3s ease;
 }
 
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Mobile Navigation */
+.nav-links {
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 20px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
 /* Hero Section */
 .hero {
     position: relative;
@@ -227,8 +267,40 @@ section h2 {
 }
 
 /* Blog Section */
+.blog-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
 .blog-cards .card {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 10px;
     width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-cards .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.blog-cards .card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.blog-cards .card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.blog-cards .card p {
+    font-size: 16px;
+    color: #666;
 }
 
 /* Contact Section */
@@ -410,5 +482,15 @@ body.dark-mode #theme-toggle {
         right: 10px;
         padding: 8px 12px;
         font-size: 16px;
+    }
+
+    .blog-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blog-cards .card {
+        width: 100%;
+        margin-bottom: 20px;
     }
 }
