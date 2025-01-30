@@ -1,8 +1,10 @@
-/* Basic Reset */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 html {
@@ -10,7 +12,7 @@ html {
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     transition: background-color 0.5s ease, color 0.5s ease;
 }
@@ -131,7 +133,7 @@ header .cta {
     font-size: 48px;
     margin-bottom: 20px;
     animation: fadeInDown 1.5s ease-out;
-    color: #444141; /* Ensure text color is white */
+    color: #ccc; /* Ensure text color is white */
 }
 
 .hero p {
@@ -139,7 +141,7 @@ header .cta {
     font-size: 24px;
     margin-bottom: 40px;
     animation: fadeInUp 1.5s ease-out;
-    color: #444141; /* Ensure text color is white */
+    color: #ccc; /* Ensure text color is white */
 }
 
 .hero .cta {
@@ -329,6 +331,64 @@ section h2 {
 
 .contact-info {
     margin-top: 20px;
+}
+
+/* Booking Section */
+.booking {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.booking h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.booking form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.booking form input,
+.booking form textarea,
+.booking form select {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+}
+
+.booking form button {
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.clothes-section {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px 0;
+}
+
+.clothes-section h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.clothes-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.clothes-item input,
+.clothes-item select {
+    margin-bottom: 10px;
 }
 
 /* Footer Section */

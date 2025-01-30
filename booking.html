@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">Laundry</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#blog">Blog</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="booking.html">Book Appointment</a></li>
+            </ul>
+        </nav>
+        <button class="cta">Get a Quote</button>
+        <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+        <button class="hamburger" aria-label="Toggle navigation">☰</button>
+    </header>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking" data-aos="fade-up">
+        <h2>Book an Appointment</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="text" placeholder="Your Address" required>
+            <input type="tel" placeholder="Your Phone Number" required>
+            <div class="clothes-section">
+                <h3>Clothes Details</h3>
+                <div class="clothes-item">
+                    <input type="text" placeholder="Clothes Type (e.g., Shirt)" required>
+                    <input type="number" placeholder="Quantity" required>
+                    <select required>
+                        <option value="" disabled selected>Color</option>
+                        <option value="colored">Colored</option>
+                        <option value="white">White</option>
+                    </select>
+                </div>
+                <div class="clothes-item">
+                    <input type="text" placeholder="Clothes Type (e.g., Pants)" required>
+                    <input type="number" placeholder="Quantity" required>
+                    <select required>
+                        <option value="" disabled selected>Color</option>
+                        <option value="colored">Colored</option>
+                        <option value="white">White</option>
+                    </select>
+                </div>
+                <div class="clothes-item">
+                    <input type="text" placeholder="Clothes Type (e.g., Jacket)" required>
+                    <input type="number" placeholder="Quantity" required>
+                    <select required>
+                        <option value="" disabled selected>Color</option>
+                        <option value="colored">Colored</option>
+                        <option value="white">White</option>
+                    </select>
+                </div>
+                <!-- Add more clothes items as needed -->
+            </div>
+            <textarea placeholder="Additional Notes"></textarea>
+            <button type="submit">Book Appointment</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="logo">Laundry</div>
+        <ul class="quick-links">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#blog">Blog</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <div class="social-media">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
